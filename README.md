@@ -91,30 +91,6 @@ projeto-completo/
 └── README.md
 ```
 
-## 🗄️ Modelo de Dados
-
-### Tabela: `usuario`
-```sql
-CREATE TABLE usuario (
-    id BIGINT PRIMARY KEY,
-    username VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    role VARCHAR(20) NOT NULL,        -- ADMIN ou USER
-    nome VARCHAR(100),
-    senha VARCHAR(100)
-);
-```
-
-### Tabela: `estoque` (Produtos)
-```sql
-CREATE TABLE estoque (
-    id BIGINT PRIMARY KEY,
-    codigo_Produto INT NOT NULL UNIQUE,
-    produto VARCHAR(100) NOT NULL,
-    preco DECIMAL(10,2) NOT NULL,
-    quantidade_Estoque INT NOT NULL
-);
-```
 
 ## 🚀 Como Executar
 
@@ -127,7 +103,7 @@ CREATE TABLE estoque (
 
 1. **Clone o repositório** (se aplicável)
 ```bash
-git clone <repository-url>
+git clone https://github.com/abreuwilliam/SistemaDePontoDeVendaParaComercio.git
 cd projeto-completo
 ```
 
